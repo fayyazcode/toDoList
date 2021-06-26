@@ -60,3 +60,20 @@ function toDo() {
     mainInput.value = ""
 
 }
+
+
+function reset() {
+    var list = document.getElementById("mainList")
+    list.remove()
+
+    var mainInput = document.getElementById("mainInput")
+    mainInput.value=""
+
+    var ol = document.createElement("ol")
+    ol.setAttribute("id", "mainList")
+
+    var div = document.getElementById("main")
+    div.appendChild(ol)
+
+}
+
