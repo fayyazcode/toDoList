@@ -93,3 +93,6 @@ function innerupdate(btn1) {
 
 }
 
+function del(data) {
+    data.remove()
+}
