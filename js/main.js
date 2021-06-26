@@ -14,3 +14,17 @@ function toDo() {
         return 0
     }
 
+
+
+    var list = document.getElementById("mainList")
+
+
+    var li = document.createElement("li")
+    var inp = document.createElement("input")
+    var btn1 = document.createElement("button")
+    var btn2 = document.createElement("button")
+
+
+
+
+
