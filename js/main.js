@@ -85,3 +85,11 @@ function updt(btn1) {
     btn1.previousSibling.disabled = false
     btn1.setAttribute("onclick", "innerupdate(this)")
 }
+function innerupdate(btn1) {
+    btn1.innerHTML = "EDIT"
+    btn1.style.backgroundColor = "Yellowgreen";
+    btn1.previousSibling.disabled = true
+    btn1.setAttribute("onclick", "updt(this)")
+
+}
+
