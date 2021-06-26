@@ -1,9 +1,7 @@
 *{
     padding-bottom:3px ;
 }
-html{
-background-image: url(img/bg.jpg);
-}
+
 #todoList label{
     width: 80%;
 }
@@ -17,6 +15,12 @@ background-image: url(img/bg.jpg);
 }
 #todoList .btn{
     margin-left: 10px;
+}
+.main{
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 li{
