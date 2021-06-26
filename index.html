@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Page Description">
+  <meta name="author" content="Afolabi mayowa">
+  <title>Todo list</title>
+
+
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h2 class="text-center">Todo List App</h2>
+
+  <div class="main container" id="main">
+    <div class="inner-div">
+      <input id="mainInput" type="text" class="form-control">
+      <button class="btn btn-primary" onclick="toDo()">ADD</button>
+      <button class="btn btn-danger" onclick="reset()">RESET</button>
+    </div>
+    <ul id="mainList"></ul>
+
+
+
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
