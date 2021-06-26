@@ -77,3 +77,11 @@ function reset() {
 
 }
 
+
+function updt(btn1) {
+
+    btn1.innerHTML = "UPDATE";
+    btn1.style.backgroundColor = "green";
+    btn1.previousSibling.disabled = false
+    btn1.setAttribute("onclick", "innerupdate(this)")
+}
