@@ -5,11 +5,10 @@ function toDo() {
 
 
     if (taskValue == "") {
-        alert("This field cant be empty")
+        swal ( "Oops" ,  "Input Cant Be Empty" ,  "error" )
         return 0
     }
     else if (!taskValue.trim().length) {
-        alert('Invalid Task');
         mainInput.value = ""
         return 0
     }
@@ -17,8 +16,6 @@ function toDo() {
 
 
     var list = document.getElementById("mainList")
-
-
     var li = document.createElement("li")
     var inp = document.createElement("input")
     var btn1 = document.createElement("button")
@@ -64,6 +61,7 @@ function toDo() {
 
 function reset() {
     var list = document.getElementById("mainList")
+    swal ( "Removed" ,  "List Cleared" ,  "success" )
     list.remove()
 
     var mainInput = document.getElementById("mainInput")
@@ -84,9 +82,11 @@ function updt(btn1) {
     btn1.style.backgroundColor = "green";
     btn1.previousSibling.disabled = false
     btn1.setAttribute("onclick", "innerupdate(this)")
+   
 }
 function innerupdate(btn1) {
     btn1.innerHTML = "EDIT"
+    swal ( "Edit" ,  "Title Edited" ,  "success" )
     btn1.style.backgroundColor = "Yellowgreen";
     btn1.previousSibling.disabled = true
     btn1.setAttribute("onclick", "updt(this)")
@@ -94,6 +94,7 @@ function innerupdate(btn1) {
 }
 
 function del(data) {
+    swal ( "Remove" ,  "Point removed" ,  "success" )
     data.remove()
 }
 ///all done and working
